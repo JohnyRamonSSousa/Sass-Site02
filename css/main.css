@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body header nav {
+  background-color: var(--orange-0);
+  height: 80px;
+  width: 100%;
+}
+body header nav .logo {
+  color: var(--gray-0);
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+body header nav ul {
+  float: right;
+}
+body header nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+body header nav ul li a {
+  color: var(--gray-1);
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+body header nav ul li a.active, body header nav ul li a:hover {
+  background-color: var(--orange-1);
+}
+
+.checkbtn {
+  font-size: 45px;
+  color: var(--gray-0);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.images {
+  background-image: url(../imges/paisagem.png);
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 950px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  header nav {
+    position: relative;
+  }
+  header nav ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--orange-2);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+  header nav ul li {
+    display: block;
+    margin-top: 30px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --black-0: #000000;
+  --black-1: #333;
+  --black-2: #101D1D;
+  --black-3: #070D0D;
+  --black-4: #0C0B0B;
+  --black-opacity-0: #1F252580;
+  --gray-0: #D7D7D7;
+  --gray-1: #E3E3E3;
+  --gray-2: #c2c1c1;
+  --gray-3: #e4e3e3;
+  --orange-0: #FF760C;
+  --orange-1: #e69e67;
+  --orange-2: #7c4c27;
+  --red-0: #DD0E0E;
+  --red-1: #250303;
+  --red-2: #3A1C1C;
+  --red-3: #921515;
+  --red-4: #B43D3D;
+  --red-opacity-0: #DD0E0E8A;
+  --red-opacity-1: #FF525280;
+  --white-0: #FFFFFF;
+  --white-opacity-0: #FFFFFF47;
+  --white-opacity-1: #FFFFFF1A;
+  --yellow-opacity-0: #F6BC1BB3;
+}
+
+/*# sourceMappingURL=main.css.map */
