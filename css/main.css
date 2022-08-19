@@ -7,6 +7,24 @@
   background-position: center;
 }
 
+.montanhas {
+  background-image: url(../imges/pexels-sagui-andrea-618833.jpg);
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.florestas {
+  background-image: url(../imges/pexels-rudolf-jakkel-418831.jpg);
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,7 +37,7 @@ body header nav .logo {
   color: var(--gray-0);
   font-size: 40px;
   line-height: 80px;
-  padding: 0 100px;
+  padding: 0 30px;
   font-weight: bold;
 }
 body header nav ul {
